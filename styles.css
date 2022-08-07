@@ -173,20 +173,3 @@ footer {
   border-radius: 30px;
   background-color: var(--highlight);
 }
-
-@media (max-width: 970px) {
-  .technologies > ul > li {
-    height: 36px;
-    line-height: 36px;
-    font-size: 14px;
-
-  }
-}
-
-@media (max-width: 640px) {
-  .technologies > ul > li {
-    height: 24px;
-    line-height: 24px;
-    font-size: 10px;
-  }
-}
