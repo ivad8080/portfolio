@@ -19,6 +19,10 @@
   pointer-events: none;
 }
 
+li {
+  list-style: none;
+}
+
 html {
   background-color: var(--bg);
   color: var(--main-color);
@@ -145,4 +149,44 @@ footer {
   fill: transparent;
   stroke: var(--highlight);
   stroke-width: 2;
+}
+
+.technologies > header {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.technologies > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.technologies > ul> li {
+  min-width: 84px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 30px;
+  background-color: var(--highlight);
+}
+
+@media (max-width: 970px) {
+  .technologies > ul > li {
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+
+  }
+}
+
+@media (max-width: 640px) {
+  .technologies > ul > li {
+    height: 24px;
+    line-height: 24px;
+    font-size: 10px;
+  }
 }
