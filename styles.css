@@ -119,6 +119,13 @@ footer {
   }
 }
 
+@media (max-width: 440px) {
+  .profile > .image {
+    width: 128px;
+    height: 128px;
+  }
+}
+
 .profile > .image > img {
   width: 100%;
   height: 100%;
@@ -166,6 +173,12 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin-top: 20px;
+}
+
+@media (max-width: 440px) {
+  .technologies > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .technologies > ul > li {
