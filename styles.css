@@ -16,8 +16,6 @@
   padding: 0;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 20%);
-  user-select: none;
-  pointer-events: none;
 }
 
 li {
@@ -213,4 +211,28 @@ footer {
 .education > ul > li > span {
   display: block;
   font-size: 12px;
+}
+
+.myProjects {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.myProjects > header {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.myProjects > a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--highlight);
+  transition: transform 150ms ease-out;
+}
+
+.myProjects > a:hover {
+  color: var(--main-color);
+  text-decoration: none;
+  transform: scale(1.25);
 }
