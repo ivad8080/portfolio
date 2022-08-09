@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 20%);
+  /* border: 1px solid rgba(0, 0, 0, 20%); */
 }
 
 li {
@@ -70,21 +70,9 @@ body > main > section {
   flex: 1;
 }
 
-footer {
+body > footer {
   text-align: center;
   padding: 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--default-spacing);
-}
-
-@media (max-width: 1172px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .card {
@@ -235,4 +223,98 @@ footer {
   color: var(--main-color);
   text-decoration: none;
   transform: scale(1.25);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--default-spacing);
+}
+
+@media (max-width: 1172px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projects > a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 300;
+  transition: transform 150ms ease-out, filter 150ms ease-out;
+}
+
+.projects > a:hover {
+  transform: scale(1.05);
+  filter: brightness(120%);
+}
+
+.projects > a > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projects > a > div > header {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--default-spacing) / 2);
+}
+
+.projects > a > div > header > svg {
+  width: 24px;
+  height: 24px;
+  fill: transparent;
+  stroke: var(--highlight);
+  stroke-width: 2;
+}
+
+.projects > a > div > header > strong {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.projects > a > div > footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projects > a > div > footer > .info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.projects > a > div > footer > .info > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.projects > a > div > footer > .info > div > svg {
+  width: 24px;
+  height: 24px;
+  fill: transparent;
+  stroke: var(--highlight);
+  stroke-width: 2;
+}
+
+.projects > a > div > footer > .info > div > span {
+  display: block;
+}
+
+.projects > a > div > footer > .language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.projects > a > div > footer > .language > svg {
+  width: 17px;
+  height: 17px;
+  fill: #326631;
+}
+.projects > a > div > footer > .language > span {
+  display: block;
 }
