@@ -257,6 +257,13 @@ body > footer {
   justify-content: space-between;
 }
 
+@media (max-width: 420px) {
+  .projects > a > div > footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 .projects > a > div > footer > .info {
   display: flex;
   gap: 20px;
