@@ -57,10 +57,6 @@ body > main > section {
   gap: var(--default-spacing);
 }
 
-body > main > aside {
-  min-width: 348px;
-}
-
 body > main > section {
   flex: 1;
 }
